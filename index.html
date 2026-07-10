@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>居酒屋みっちゃん | あったかい一杯と手づくりの味</title>
+  <meta name="description" content="居酒屋みっちゃんは、心あたたまる手づくり料理とこだわりのドリンクでお迎えする、落ち着いた雰囲気の居酒屋です。目玉焼き丼・アイスコーヒーなど、素材にこだわったメニューをご用意しています。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-kanji">居酒屋</span>
+        <span class="logo-name">みっちゃん</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">店について</a></li>
+        <li><a href="#menu" class="nav-link">メニュー</a></li>
+        <li><a href="#access" class="nav-link">アクセス</a></li>
+        <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="hero_bg.png" alt="居酒屋みっちゃんの温かな店内" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-subtitle" data-animate="fade-up">― 心あたたまる、手づくりの味 ―</p>
+      <h1 class="hero-title" data-animate="fade-up" data-delay="200">
+        <span class="hero-title-kanji">居酒屋</span>
+        <span class="hero-title-name">みっちゃん</span>
+      </h1>
+      <p class="hero-description" data-animate="fade-up" data-delay="400">
+        素材のやさしさを大切に。<br />ゆっくり、のんびり、おいしいひとときを。
+      </p>
+      <div class="hero-cta" data-animate="fade-up" data-delay="600">
+        <a href="#menu" class="btn btn-primary" id="hero-menu-btn">メニューを見る</a>
+        <a href="#about" class="btn btn-outline" id="hero-about-btn">店について</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- 店についてセクション -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About</span>
+        <h2 class="section-title">みっちゃんについて</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-animate="fade-right">
+          <p class="about-lead">
+            「また来たい」と思える場所を目指して。
+          </p>
+          <p class="about-body">
+            居酒屋みっちゃんは、手づくりにこだわった料理と、丁寧に準備したドリンクで皆さまをお迎えします。
+            大切な人との語らいや、ひとりでほっと一息つくひとときに。
+            日々の疲れを癒す、あたたかな空間をご用意しています。
+          </p>
+          <p class="about-body">
+            メニューはまだ少ないですが、ひとつひとつに心を込めています。
+            今後もおいしいものを少しずつ増やしていく予定です。どうぞお楽しみに。
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">🍳</div>
+              <div class="feature-text">
+                <strong>手づくりの味</strong>
+                <span>素材を活かした丁寧な料理</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">☕</div>
+              <div class="feature-text">
+                <strong>こだわりのドリンク</strong>
+                <span>厳選したコーヒーと飲み物</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🏮</div>
+              <div class="feature-text">
+                <strong>くつろぎの空間</strong>
+                <span>ゆったりとした居心地の良さ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-wrap" data-animate="fade-left">
+          <div class="about-image-frame">
+            <img src="hero_bg.png" alt="居酒屋みっちゃんの店内" class="about-image" />
+          </div>
+          <div class="about-badge">
+            <span class="badge-text">手づくり</span>
+            <span class="badge-sub">こだわりの一品</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- メニューセクション -->
+  <section class="menu section" id="menu">
+    <div class="menu-bg-pattern"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Menu</span>
+        <h2 class="section-title">メニュー</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">現在のメニューをご紹介します。随時新しいメニューを追加予定です。</p>
+      </div>
+
+      <div class="menu-category">
+        <h3 class="menu-category-title">
+          <span class="cat-icon">🍚</span> ご飯もの
+        </h3>
+        <div class="menu-grid">
+          <article class="menu-card" data-animate="fade-up" id="menu-tamago-don">
+            <div class="menu-card-image-wrap">
+              <img src="tamago_don.jpg" alt="目玉焼き丼" class="menu-card-img" loading="lazy" />
+              <div class="menu-card-tag">おすすめ</div>
+            </div>
+            <div class="menu-card-body">
+              <h4 class="menu-card-name">目玉焼き丼</h4>
+              <p class="menu-card-desc">
+                雑穀米の上にキャベツをたっぷり盛り、半熟の目玉焼きをのせた一品。
+                特製スパイスとソースが絡み、見た目も食欲をそそります。
+              </p>
+              <div class="menu-card-footer">
+                <span class="menu-tag">雑穀米</span>
+                <span class="menu-tag">半熟たまご</span>
+                <span class="menu-tag">野菜たっぷり</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h3 class="menu-category-title">
+          <span class="cat-icon">☕</span> ドリンク
+        </h3>
+        <div class="menu-grid">
+          <article class="menu-card" data-animate="fade-up" id="menu-ice-coffee">
+            <div class="menu-card-image-wrap">
+              <img src="iced_coffee.jpg" alt="アイスコーヒー" class="menu-card-img" loading="lazy" />
+              <div class="menu-card-tag">人気</div>
+            </div>
+            <div class="menu-card-body">
+              <h4 class="menu-card-name">アイスコーヒー</h4>
+              <p class="menu-card-desc">
+                こだわりのコーヒーを丁寧に抽出し、アンティーク調のグラスで提供。
+                氷がゆっくり溶けながら、深みのある味わいが広がります。
+              </p>
+              <div class="menu-card-footer">
+                <span class="menu-tag">深煎り</span>
+                <span class="menu-tag">こだわりグラス</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="menu-coming-soon" data-animate="fade-up">
+        <div class="coming-soon-inner">
+          <div class="coming-soon-icon">✨</div>
+          <p class="coming-soon-text">新メニューを続々追加予定！</p>
+          <p class="coming-soon-sub">お楽しみにお待ちください</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセスセクション -->
+  <section class="access section" id="access">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Access</span>
+        <h2 class="section-title">アクセス</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="access-grid">
+        <div class="access-info" data-animate="fade-right">
+          <div class="info-block">
+            <div class="info-label">
+              <span class="info-icon">🏮</span> 店名
+            </div>
+            <div class="info-value">居酒屋みっちゃん</div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">
+              <span class="info-icon">🕐</span> 営業時間
+            </div>
+            <div class="info-value">
+              準備中<br />
+              <span class="info-note">詳細は近日公開予定です</span>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">
+              <span class="info-icon">📅</span> 定休日
+            </div>
+            <div class="info-value">
+              準備中<br />
+              <span class="info-note">詳細は近日公開予定です</span>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">
+              <span class="info-icon">📍</span> 住所
+            </div>
+            <div class="info-value">
+              準備中<br />
+              <span class="info-note">詳細は近日公開予定です</span>
+            </div>
+          </div>
+        </div>
+        <div class="access-map" data-animate="fade-left">
+          <div class="map-placeholder">
+            <div class="map-placeholder-inner">
+              <span class="map-icon">🗺️</span>
+              <p>地図は準備中です</p>
+              <p class="map-sub">住所が決定次第掲載します</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせセクション -->
+  <section class="contact section" id="contact">
+    <div class="contact-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">お問い合わせ</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">ご予約・お問い合わせはこちらからどうぞ。</p>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-name" class="form-label">お名前 <span class="required">必須</span></label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="山田 みっちゃん" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="micchan@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-subject" class="form-label">件名</label>
+          <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="ご予約について" />
+        </div>
+        <div class="form-group">
+          <label for="contact-message" class="form-label">メッセージ <span class="required">必須</span></label>
+          <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="ご用件をお書きください..." required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary btn-large" id="contact-submit">送信する</button>
+        </div>
+        <div class="form-success" id="form-success">
+          <span class="success-icon">✅</span>
+          <p>お問い合わせを受け付けました。ありがとうございます！</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-logo">
+          <span class="footer-logo-kanji">居酒屋</span>
+          <span class="footer-logo-name">みっちゃん</span>
+        </div>
+        <p class="footer-tagline">心あたたまる、手づくりの味</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">&copy; 2026 居酒屋みっちゃん. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
